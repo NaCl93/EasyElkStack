@@ -36,10 +36,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| Web1     |   Server       |    10.1.0.9        |     Linux             |
-| Web2     |  Server        |    10.1.0.10        |          Linux        |
-| ElkVM     |    Elk Server      |        10.1.0.11    |         Linux         |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
+| Web1     |   Server       |    10.0.0.5        |     Linux             |
+| Web2     |  Server        |    10.0.0.6       |          Linux        |
+| ElkVM     |    Elk Server      |        10.1.0.5    |         Linux         |
 
 ### Access Policies
 
@@ -54,9 +54,9 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box |     No              | 10.1.0.8   |
-|   Web1       |    No                 |            10.1.0.9          |
-|   Web2       |          No           |         10.1.0.10             |
+| Jump Box |     No              | 10.0.0.5 10.0.0.6   |
+|   Web1       |    No                 |            10.1.0.5          |
+|   Web2       |          No           |         10.1.0.5             |
 |   ElkVM       |        No             |       10.0.0.4              |
 ### Elk Configuration
 
@@ -75,7 +75,7 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1(10.1.0.9) Web-2(10.1.0.10)
+- Web-1(10.0.0.5) Web-2(10.0.0.6)
 
 We have installed the following Beats on these machines:
 -Filebeat and Metricbeat
